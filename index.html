@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang='en-GB'>
+<head>
+  <meta charset='utf-8'>
+  <title>Ractive test</title>
+</head>
+
+<body>
+  <h1>Ractive test</h1>
+
+  <div id='container' style="height: 200px"></div>
+
+  <!-- templates -->
+  <script id="svghisto" type="text/ractive">
+<svg width="100%" height="100%">
+  <g>
+    {{#columns:i}}
+    <rect x='{{100/columns.length * i}}%' width='{{ 100 / columns.length}}%' height='{{scale(value)}}%'/>
+    {{/each}}
+  </g>
+</svg>
+  </script>
+  <script id="histogram" type="text/ractive">
+    {{#each columns}}
+      <div class='bar-group' style='width: {{ 100 / columns.length }}%;'>
+
+        <div class='bar-outer high {{ (value >= 0) ? "positive" : "negative" }}' style='height: {{ scale(value) }}%;'>
+          <div class='bar-inner' style='background-color: {{ getColor(value) }};'></div>
+          <span>{{ format(value) }}</span>
+        </div>
+
+        <!-- month label (JFMAMJJASOND) -->
+        <span class='label'>{{ field }}</span>
+      </div>
+    {{/each}}
+  </script>
+  <script src='./js/ractive.min.js'></script>
+  <script src='./js/component.js'></script>
+  </body>
+</html>
