@@ -66,7 +66,7 @@ var histogram = window.histogram =  new Ractive({
   data: {
     scale: function (val) {
       // quick and dirty...
-      return 100 / maxYearValue * Math.abs( val );
+      return 90 / maxYearValue * Math.abs( val );
     },
     format: function (val) {
       return val;
