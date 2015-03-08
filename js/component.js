@@ -4,7 +4,7 @@ var films = [
 {"title": "Rocky 3","year":1982,"director":"Sylvester Stallone","actors":"Sylvester Stallone/Talia Shire/Carl Weathers/Burt Young/Burgess Meredith/Mister T./Hulk Hogan/Tony Burton"},
 {"title": "Last Action Hero","year":1993,"director":"John McTierman","actors":"Arnold Schwarzenegger/Austin O'Brien/Charles Dance/Bridget Wilson-Sampras"},
 {"title": "Terminator","year":1984,"director":"James Cameron","actors":"Arnold Schwarzenegger/Michael Biehn/Linda Hamilton"},
-{"title": "Terminator 2","year":1949,"director":"James Cameron","actors":"Arnold Schwarzenegger/Linda Hamilton/Edward Furlong/Robert Patrick"},
+{"title": "Terminator 2","year":1991,"director":"James Cameron","actors":"Arnold Schwarzenegger/Linda Hamilton/Edward Furlong/Robert Patrick"},
 {"title": "Terminator 3","year":2003,"director":"Jonathan Mostow","actors":"Arnold Schwarzenegger/Nick Stahl/Claire Danes/Kristanna Loken"},
 {"title": "Terminator Salvation","year":2009,"director":"Joseph McGinty Nichol","actors":"Christian Bale/Sam Worthington/Anton Yelchin/Bryce Dallas Howard"},
 {"title": "Total Recall","year":1990,"director":"Paul Verhoeven","actors":"Arnold Schwarzenegger/Sharon Stone/Michael Ironside/Rachel Ticotin/Ronny Cox"},
