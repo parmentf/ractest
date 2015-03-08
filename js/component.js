@@ -87,3 +87,7 @@ var histogram = window.histogram =  new Ractive({
 histogram.set('films', films);
 
 histogram.set('columns', distinct(films, 'year'));
+
+histogram.on('test', function (event) {
+  console.log(event.node.textContent,event.context.value,event);
+});

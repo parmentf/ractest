@@ -15,8 +15,10 @@
 <svg width="100%" height="100%">
   <g>
     {{#columns:i}}
-    <rect transform="scale(1,-1)" x='{{100/columns.length * i}}%' y="-90%" width='{{ 100 / columns.length}}%' height='{{scale(value)}}%'/>
-    <text x="{{100/columns.length * (i + 0.5)}}%" y="100%" text-anchor="middle">{{field}}</text>
+    <rect transform="scale(1,-1)" x='{{100/columns.length * i}}%' y="-90%"
+          width='{{ 100 / columns.length}}%' height='{{scale(value)}}%' stroke="white"/>
+    <text x="{{100/columns.length * (i + 0.5)}}%" y="100%" text-anchor="middle"
+          on-click="test">{{field}}</text>
     {{/each}}
   </g>
 </svg>
