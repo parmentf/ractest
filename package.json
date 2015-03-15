@@ -1,0 +1,29 @@
+{
+  "name": "ractest",
+  "version": "0.0.0",
+  "description": "Testing Ractivejs",
+  "main": "index.js",
+  "dependencies": {
+    "dalek-browser-chrome": "^0.0.11",
+    "dalek-reporter-html": "^0.0.4",
+    "dalekjs": "^0.0.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "http-server & dalek js/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/parmentf/ractest.git"
+  },
+  "keywords": [
+    "ractivejs",
+    "test"
+  ],
+  "author": "François Parmentier <francois.parmentier@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/parmentf/ractest/issues"
+  },
+  "homepage": "https://github.com/parmentf/ractest"
+}
